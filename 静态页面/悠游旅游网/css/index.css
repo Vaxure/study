@@ -1,0 +1,722 @@
+/*
+ * @Description: index.css
+ * @Author: Kohaku 
+ * @Date: 2018-11-09 21:31:59 
+ * @Last Modified by: Kohaku.zxy
+ * @Last Modified time: 2018-11-13 20:15:00
+ */
+
+/********************头部轮播图*********************/
+/* banner图片 */
+.site_header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.site_header .slider_con {
+    /* width: 100%; */
+    /* overflow: hidden; */
+}
+
+.site_header .slider_con li {
+    float: left;
+    width: 100%;
+    height: 600px;
+}
+
+.site_header .banner {
+    height: 600px;
+    background: url('../images/banner01.jpg') no-repeat center center;
+}
+
+.site_header .slider_nav {
+    position: absolute;
+    width: 200px;
+    height: 16px;
+    bottom: 29px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+}
+
+.slider_nav li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid #fcfcfd;
+}
+
+.slider_nav li.active {
+    background-color: #fcfcfd;
+}
+
+/********************中部主体*********************/
+.site_main {
+    width: 100%;
+}
+
+.search_wrap {
+    height: 40px;
+    padding-top: 72px;
+}
+
+.search_box {
+    position: relative;
+    width: 350px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.search_box .search_input {
+    height: 38px;
+    width: 299px;
+    text-indent: 12px;
+    color: #999;
+    border: 1px solid #666;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #f3f3f3;
+}
+
+.search_box .search_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 49px;
+    height: 38px;
+    border: 1px solid #666;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background: url('../images/search_icon.png') no-repeat center;
+}
+
+/* 旅游模块 */
+.floorbox {
+    padding: 47px 0 48px 0;
+}
+
+/* 头部统一标题 */
+.floorhd {
+    height: 105px;
+}
+
+.floorhd .floorhd_tit {
+    width: 327px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.floorhd_tit h2 {
+    position: relative;
+    height: 59px;
+    line-height: 59px;
+    font-size: 36px;
+    color: #5696ff;
+}
+
+.floorhd_tit h2::before,
+.floorhd_tit h2::after {
+    position: absolute;
+    content: '';
+    width: 79px;
+    height: 5px;
+    top: 27px;
+    border: 1px solid #8c8c8c;
+    background-color: #666;
+}
+
+.floorhd_tit h2::before {
+    left: 0;
+}
+
+.floorhd_tit h2::after {
+    right: 0;
+}
+
+.floorhd_tit p {
+    font-size: 22px;
+    line-height: 46px;
+    color: #666;
+}
+
+.floorbd {
+    padding-top: 43px;
+}
+
+/* 地区旅游 */
+.dq_wrap {
+    height: 373px;
+}
+
+.dq_wrap li {
+    position: relative;
+    float: left;
+    height: 373px;
+    width: 119px;
+    margin-right: 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dq_wrap li:nth-child(1) {
+    background-image: url('../images/place_sc_01.jpg');
+}
+
+.dq_wrap li:nth-child(2) {
+    background-image: url('../images/place_dali_01.jpg');
+}
+
+.dq_wrap li:nth-child(3) {
+    background-image: url('../images/place_danmai_01.jpg');
+}
+
+.dq_wrap li:nth-child(4) {
+    margin-right: 1px;
+    background-image: url('../images/place_japan_01.jpg');
+}
+
+.dq_wrap li:nth-child(5) {
+    background-image: url('../images/place_italia_01.jpg');
+}
+
+.dq_wrap li:nth-child(6) {
+    background-image: url('../images/place_france_01.jpg');
+}
+
+.dq_wrap li.last {
+    margin-right: 0;
+}
+
+.dq_wrap li.item_big {
+    width: 596px;
+}
+
+.dq_wrap li .shade {
+    height: 302px;
+    padding-top: 71px;
+    padding-left: 34px;
+    font-size: 28px;
+    color: #fbfcfd;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.dq_wrap li span {
+    display: block;
+    width: 0;
+    line-height: 28px;
+}
+
+.dq_wrap .play_icon {
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    top: 50%;
+    left: 50%;
+    margin-top: -38px;
+    margin-left: -38px;
+    cursor: pointer;
+    background: url('../images/start_play_icon.png') no-repeat;
+}
+
+.floorft {
+    padding-top: 72px;
+}
+
+.floorft .more_btn {
+    display: block;
+    width: 156px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #5696ff;
+    font-size: 26px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 2px solid #5696ff;
+}
+
+.floorft .more_btn:hover {
+    background-color: #5696ff;
+    color: #fefefe;
+}
+
+/* 特惠行程 */
+.th_wrap {
+    width: 1999;
+}
+
+.th_wrap .img_box {
+    color: #fefefe;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.th_wrap .img_box p {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.th_wrap .leftbox {
+    width: 899px;
+}
+
+.th_wrap .rightbox {
+    width: 300px;
+    height: 684px;
+}
+
+.th_wrap .rightbox div:nth-child(1) {
+    height: 425px;
+    padding-left: 55px;
+    padding-top: 47px;
+    margin-bottom: 8px;
+    background-image: url('../images/place_japan_02.jpg');
+}
+
+.th_wrap .rightbox div:nth-child(2) {
+    padding-top: 75px;
+    padding-left: 55px;
+    height: 129px;
+    background-image: url('../images/place_india_01.jpg');
+}
+
+.leftbox_top {
+    height: 307px;
+    margin-bottom: 8px;
+}
+
+.leftbox_top>div:nth-child(1) {
+    float: left;
+    width: 381px;
+    height: 260px;
+    padding-left: 60px;
+    padding-top: 47px;
+    margin-right: 8px;
+    background-image: url('../images/place_danmai_02.jpg');
+}
+
+.leftbox_top>div:nth-child(2) {
+    position: relative;
+    float: left;
+    width: 442px;
+    height: 307px;
+    background-image: url('../images/place_yuenan_01.jpg');
+}
+
+.leftbox_top .desc {
+    position: absolute;
+    width: 396px;
+    height: 232px;
+    left: 22px;
+    top: 21px;
+    padding-top: 22px;
+    background-color: rgba(0, 0, 0, .3);
+    border: 4px solid rgba(255, 255, 255, .8);
+}
+
+.leftbox_top .desc p {
+    padding-left: 30px;
+    height: 31px;
+    line-height: 31px;
+}
+
+.leftbox_top .price {
+    position: relative;
+    margin-top: 21px;
+    height: 43px;
+}
+
+.leftbox_top .price::before,
+.leftbox_top .price::after {
+    position: absolute;
+    content: ' ';
+    width: 90px;
+    height: 4px;
+    top: 19px;
+    background-color: #fff;
+}
+
+.leftbox_top .price::before {
+    left: 39px;
+}
+
+.leftbox_top .price::after {
+    right: 39px;
+}
+
+.leftbox_top .price span {
+    position: absolute;
+    left: 158px;
+    top: 0;
+    font-size: 26px;
+    line-height: 43px;
+}
+
+.leftbox_bottom {
+    height: 369px;
+}
+
+.leftbox_bottom>div:nth-child(1) {
+    float: left;
+    width: 307px;
+    height: 325px;
+    padding-left: 55px;
+    padding-top: 44px;
+    margin-right: 8px;
+    background-image: url('../images/place_taiguo_01.jpg');
+}
+
+.leftbox_bottom>div:nth-child(2) {
+    float: left;
+    width: 466px;
+    height: 325px;
+    padding-left: 55px;
+    padding-top: 44px;
+    background-image: url('../images/place_mlxy_01.jpg');
+}
+
+/* 旅游资讯 */
+.tourbd {
+    padding-top: 83px;
+}
+
+.tour_wrap {
+    position: relative;
+    padding-top: 132px;
+}
+
+/* 墨西哥 */
+.tour_wrap .tour_img1 {
+    width: 1199px;
+    height: 745px;
+    background: url('../images/place_mxg_02.jpg') no-repeat center;
+}
+
+.tour_wrap .tour_img2 {
+    position: absolute;
+    width: 552px;
+    height: 442px;
+    right: 0;
+    top: 0;
+    z-index: 30;
+    padding: 0 38px 40px 41px;
+    background-color: #f3f3f3;
+}
+
+.tour_wrap .title {
+    position: relative;
+    float: left;
+    height: 681px;
+    width: 450px;
+    text-align: right;
+}
+
+.tour_wrap .title p {
+    color: #333;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.tour_wrap .desc {
+    position: relative;
+}
+
+.tour_wrap .line {
+    display: inline-block;
+    vertical-align: top;
+    width: 132px;
+    height: 6px;
+    margin-top: 49px;
+    margin-bottom: 25px;
+    background-color: #666;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #959595;
+}
+
+.tour_wrap .content {
+    float: right;
+    width: 562px;
+    height: 645px;
+    padding-top: 36px;
+    line-height: 48px;
+    font-size: 24px;
+    color: #333;
+}
+
+.floorbd .content_btn {
+    display: block;
+    width: 174px;
+    height: 54px;
+    line-height: 54px;
+    border: 3px solid #999;
+    border-radius: 5px;
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    background-color: #f3f3f3;
+    margin-top: 37px;
+    margin-left: 4px;
+}
+
+/* 新西兰 */
+.tour_wrap .nzl {
+    position: relative;
+}
+
+.tour_wrap .tour_img3 {
+    width: 578px;
+    height: 781px;
+}
+
+.tour_wrap .tour_img4 {
+    position: absolute;
+    width: 626px;
+    z-index: 30;
+    top: 64px;
+    right: 0;
+    padding: 46px;
+    background-color: #f3f3f3;
+}
+
+.tour_wrap .nzl .title {
+    height: 232px;
+}
+
+.tour_wrap .nzl .content {
+    position: absolute;
+    padding-top: 0;
+    float: none;
+    z-index: 30;
+    width: 563px;
+    height: auto;
+    right: 0;
+    top: -165px;
+    line-height: 58px;
+}
+
+/* 游记分享 */
+.note_wrap .note_left {
+    float: left;
+    width: 730px;
+    line-height: 48px;
+    background: url('../images/youji_img_01.jpg') no-repeat center;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.note_wrap .note_content {
+    width: 410px;
+    height: 920px;
+    padding-left: 36px;
+    padding-top: 42px;
+    padding-right: 55px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.note_wrap .lab {
+    color: #5696ff;
+    font-size: 24px;
+}
+
+.note_left .title {
+    padding-top: 72px;
+}
+
+.note_left .title h2 {
+    line-height: 36px;
+    font-size: 24px;
+    color: #fefefe;
+}
+
+.note_left .title h3 {
+    line-height: 32px;
+    font-size: 20px;
+
+    color: #fefefe;
+}
+
+.note_left .title .sep {
+    display: inline-block;
+    height: 18px;
+    width: 1px;
+    margin: 0 18px;
+    vertical-align: middle;
+    background-color: #c8d3db;
+}
+
+.note_left .essay {
+    font-size: 18px;
+    line-height: 48px;
+    margin-top: 4px;
+    color: #fff;
+}
+
+.note_wrap .content_btn {
+    width: 156px;
+    height: 56px;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 106px;
+    border: 2px solid #8a979d;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.note_wrap .note_right {
+    float: right;
+    width: 443px;
+    /* height: 962px; */
+}
+
+.note_right .nr_box {
+    height: 431px;
+    padding-left: 33px;
+    padding-top: 35px;
+    background-color: #fff;
+    box-shadow: 1px 3px 12px rgba(0, 0, 0, .1);
+}
+
+.note_right .nr_box:last-child {
+    margin-top: 31px;
+}
+
+.note_right .nr_img1,
+.note_right .nr_img2 {
+    position: relative;
+    width: 375px;
+    height: 297px;
+}
+
+.note_right .nr_img1 {
+    background: url('../images/youji_img_02.jpg') no-repeat center;
+}
+
+.note_right .nr_img2 {
+    background: url('../images/youji_img_03.jpg') no-repeat center;
+}
+
+.note_right .tag {
+    position: absolute;
+    top: 13px;
+    left: 9px;
+}
+
+.note_right .tag span {
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 6px;
+    background-color: #a0bfde;
+    margin-right: 9px;
+}
+
+.note_right .nr_text {
+    width: 386px;
+    font-size: 12px;
+    line-height: 21px;
+    padding-top: 7px;
+    color: #666;
+}
+
+.note_right .nr_text p:nth-child(2) {
+    font-size: 14px;
+    color: #333;
+}
+
+.nr_img2 .tag span {
+    background-color: #3c6cbc;
+}
+
+.note_swiper {
+    height: 498px;
+    margin-top: 54px;
+    padding-left: 18px;
+    background-color: #fff;
+    box-shadow: 1px 3px 12px rgba(0, 0, 0, .1);
+}
+
+.note_swiper h3 {
+    font-size: 24px;
+    color: #5696ff;
+    line-height: 78px;
+}
+
+.note_swiper .swiper {
+    position: relative;
+}
+
+.note_swiper li {
+    position: relative;
+    float: left;
+    width: 276px;
+    height: 330px;
+    margin-right: 18px;
+}
+
+.note_swiper li .sign {
+    position: absolute;
+    top: 330px;
+    left: 0;
+    width: 276px;
+    padding-top: 8px;
+    color: #666;
+}
+
+.note_swiper .s_date {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.note_swiper .s_autor {
+    position: absolute;
+    left: 82px;
+    top: 11px;
+}
+
+.note_swiper .s_site {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.note_swiper .arrow {
+    position: absolute;
+    height: 50px;
+    width: 1158px;
+    z-index: 30;
+    top: 50%;
+    margin-top: -25px;
+}
+
+.note_swiper .arrow img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.note_swiper .arrow_l,
+.note_swiper .arrow_r {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.note_swiper .arrow_l {
+    float: left;
+}
+
+.note_swiper .arrow_r {
+    float: right;
+}
+
+.floorbox .noteft {
+    padding-top: 100px;
+}

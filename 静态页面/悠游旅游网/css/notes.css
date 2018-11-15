@@ -1,0 +1,395 @@
+/*
+ * @Description: notes.css
+ * @Author: Kohaku 
+ * @Date: 2018-11-13 21:05:39 
+ * @Last Modified by: Kohaku.zxy
+ * @Last Modified time: 2018-11-13 23:57:06
+ */
+
+/******************** 游记common *********************/
+.notes_btn {
+    display: block;
+    width: 120px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid #d1d0d0;
+}
+
+.nav_icon {
+    height: 22px;
+    width: 22px;
+    vertical-align: middle;
+}
+
+.btn_icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 30px;
+    top: 21px;
+}
+
+.star_icon {
+    width: 18px;
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 15px;
+    background-position: -199px -124px;
+}
+
+.love_icon {
+    width: 18px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 15px;
+    background-position: -10px -182px;
+}
+
+.chat_icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 15px;
+    background-position: -199px -10px;
+}
+
+/******************** 游记头部 *********************/
+.notes_header {
+    height: 58px;
+    line-height: 58px;
+    background-color: #666;
+    color: #f3f1f1;
+    font-size: 18px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.notes_header a {
+    display: inline-block;
+    height: 58px;
+    width: 100px;
+    text-align: center;
+}
+
+.nav_l i {
+    background-position: -94px -140px;
+}
+
+.nav_r a:nth-child(1) i {
+    background-position: -52px -140px;
+}
+
+.nav_r a:nth-child(2) i {
+    background-position: -10px -140px;
+}
+
+.nav_r a:nth-child(3) i {
+    background-position: -136px -140px;
+}
+
+/******************** 游记主体 *********************/
+.notes_main {
+    padding-top: 55px;
+}
+
+.notes_main .nt_aside {
+    width: 361px;
+    padding-bottom: 76px;
+}
+
+.notes_main .nt_content {
+    width: 772px;
+    height: 500px;
+    /* background-color: orange; */
+}
+
+/* 侧边栏 */
+.as_btn {
+    padding: 0 6px 0 1px;
+}
+
+.as_btn .btn_box {
+    height: 166px;
+    padding-bottom: 55px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.as_btn a {
+    position: relative;
+    display: block;
+    width: 206px;
+    height: 59px;
+    line-height: 59px;
+    text-indent: 32px;
+    font-size: 26px;
+    color: #5696ff;
+    margin: 0 auto;
+    border: 1px solid #dcdcdc;
+}
+
+.as_btn a:first-child {
+    margin-bottom: 44px;
+}
+
+.btn_box .arrow_r {
+    background-position: -199px -86px;
+}
+
+.btn_box .arrow_b {
+    background-position: -199px -48px;
+}
+
+.bimg_wrap {
+    padding: 0 6px 55px 1px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.bimg_box {
+    width: 100%;
+    height: 270px;
+    margin-top: 55px;
+    background-color: #fff;
+}
+
+.bimg_box img {
+    display: block;
+    width: 354px;
+    height: 183px;
+}
+
+.bimg_box .desc {
+    width: 322px;
+    height: 53px;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+    padding: 19px 30px 14px 0;
+}
+
+.note_tag {
+    width: 160px;
+    height: 53px;
+}
+
+.note_tag h3 {
+    text-indent: 33px;
+    color: #333;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.note_tag p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    color: #666;
+}
+
+.bimg_box .pic {}
+
+.bimg_box .pic img {
+    width: 45px;
+    height: 45px;
+    margin-top: 1px;
+}
+
+.simg_wrap {
+    padding-top: 18px;
+}
+
+.simg_wrap img {
+    width: 90px;
+    height: 90px;
+}
+
+.simg_box {
+    padding: 39px 0 37px 0;
+    /* padding: 37px 0 37px 0; */
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.simg_box .note_tag {
+    margin-top: 16px;
+}
+
+.about_us {
+    padding-top: 38px;
+}
+
+.about_us h2 {
+    line-height: 44px;
+    font-size: 22px;
+    color: #333;
+    letter-spacing: 4px;
+}
+
+.about_us p {
+    line-height: 30px;
+    font-size: 16px;
+    color: #666;
+}
+
+.about_us .know_more {
+    width: 120px;
+    margin-top: 21px;
+}
+
+/* 右侧主体部分 */
+.nt_content .content_box {
+    /* temp */
+    /* height: 731px; */
+    background: #fff;
+    margin-bottom: 70px;
+    border: 1px solid #dcdcdc;
+}
+
+.content_box .ct_title {
+    height: 109px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.ct_title .title_l {
+    width: 554px;
+    height: 85px;
+    padding-left: 37px;
+    padding-top: 24px;
+    border-right: 1px solid #dcdcdc;
+}
+
+.ct_title .title_r {
+    width: 127px;
+    height: 85px;
+    padding-top: 24px;
+    padding-left: 51px;
+}
+
+.ct_title .title_r p {
+    font-size: 12px;
+    color: #333;
+    line-height: 26px;
+}
+
+.ct_title .title_r div {
+    padding-left: 17px;
+}
+
+.ct_title .title_r .tr_name {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+    vertical-align: middle;
+    line-height: 39px;
+}
+
+.ct_title .title_r .tr_img {
+    vertical-align: middle;
+    margin-left: 13px;
+    width: 39px;
+    height: 39px;
+}
+
+.ct_title .title_l h2 {
+    font-size: 22px;
+    color: #333;
+    line-height: 38px;
+}
+
+.ct_title .title_l h3 {
+    font-family: Arial;
+    font-size: 12px;
+    color: #999;
+    line-height: 25px;
+}
+
+.ct_main {
+    padding: 59px 37px 45px;
+}
+
+.ct_main img {
+    width: 696px;
+    height: 310px;
+}
+
+.ct_main p {
+    padding-top: 25px;
+    font-size: 16px;
+    color: #666;
+    line-height: 28px;
+}
+
+.ct_main .actions_wrap {
+    margin-top: 17px;
+}
+
+.ct_main .read_more {
+    width: 108px;
+}
+
+.actions_list {
+    margin-right: -30px;
+}
+
+.actions_list li {
+    position: relative;
+    float: left;
+    height: 50px;
+    width: 88px;
+    padding-left: 29px;
+    line-height: 50px;
+}
+
+.actions_list li span {
+    line-height: 18px;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #999;
+}
+
+.actions_list li .sep {
+    font-size: 16px;
+    color: #dcdcdc;
+    margin-left: 19px;
+}
+
+/* .actions_list li .sep {
+    position: absolute;
+    height: 16px;
+    width: 1px;
+    color: #dcdcdc;
+    right: 0;
+    top: 17px;
+    z-index: 30;
+} */
+.page_nav {
+    padding-top: 67px;
+}
+
+.page_nav .notes_btn {
+    height: 57px;
+    width: 196px;
+    font-size: 18px;
+    line-height: 57px;
+}
+
+.page_nav .page_num {
+    height: 59px;
+    padding: 0 15px 0 6px;
+}
+
+.page_nav .page_num li {
+    float: left;
+    height: 59px;
+    width: 59px;
+    line-height: 59px;
+    text-align: center;
+}
+
+.page_nav .page_num a {
+    font-size: 18px;
+    color: #666;
+}
+
+.page_nav .page_num .current {
+    color: #5696ff;
+}

@@ -1,0 +1,112 @@
+/*
+ * @Description: 默认样式重置
+ * @Author: Kohaku 
+ * @Date: 2018-11-09 21:23:41 
+ * @Last Modified by: Kohaku.zxy
+ * @Last Modified time: 2018-11-13 22:34:45
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2,
+h3 {
+    font-weight: normal;
+}
+
+img {
+    border: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+
+body {
+    width: 100%;
+    min-width: 1200px;
+    font: 400 14px/1.5 'Microsoft Yahei', sans-serif;
+    background-color: #f3f3f3;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.fs20 {
+    font-size: 20px !important;
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+.col333 {
+    color: #333;
+}
+
+.colorm {
+    color: #5696ff;
+}
+
+.em2 {
+    text-indent: 2em;
+}
+
+.em3 {
+    text-indent: 3em;
+}
+
+.em44p {
+    text-indent: 44px;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.mg_bt0 {
+    margin-bottom: 0 !important;
+}
+
+.icon {
+    display: inline-block;
+    background: url('../images/main_sprites.png') no-repeat;
+}
