@@ -1,0 +1,2 @@
+在线制作ico图标： http://www.faviconico.org/favicon
+快速生成雪碧图：https://www.toptal.com/developers/css/sprite-generator

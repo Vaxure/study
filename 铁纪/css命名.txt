@@ -1,0 +1,64 @@
+1.律用-横线
+        body： font
+               color
+               background-color
+               min-width
+        顶部导航：
+            site-topbar: 加height, position,bgc,color,font-size,z-index
+                        通行的z-index一般写 999
+            左右两块通用写法：  left
+                              right
+            小米的功能性写法：  topbar-nav
+                               topbar-cart
+                               topbar-info
+            logo: 统一用a标签，有a>img: a.logo 属性
+                                            float，
+                                            width
+                                            height
+                              做个统一：img里面写width, height
+
+                              或者a 背景图：diaplay:block;
+            导航： 命名：topbar-nav
+                   标签：ul>li>a>文字
+                   属性：ul:
+                            float
+                            height:
+                            width: 看情况设定，有设有不设
+                        li:
+                            css一般用ul>li
+                            float: left;
+                            width: auto; 不设宽度，由里面的a设padding,不确定文字的宽度
+                            height
+                        a:
+                            ul>li>a
+                            display: block;
+                            height:;
+                            line-height: 垂直居中;
+                            text-aligh: 水平居中;
+                            color: 只有这里能改变a的颜色;
+                            padding: 一帮都要设置；
+            右边的浮动：
+                        这一部分内容形式较多，一般为登录注册、购物车等，涉及到小导航、图片、文字
+                        命名：right 
+                                    topbar-info：登录注册
+                                    lan-selector: 语言选择
+                                        lan-flag: 国旗
+                                        lan-text: 语言
+                                    btn-shop: 头部的商城按钮
+                        标签： div
+                        属性： 
+                              div>img+span 居中方式
+                              一般而言 img 使用vertical-aligh: middle;
+                                      span这类的文本使用line-height
+
+        头部导航：
+            site-header
+        版心: container
+        
+        主体部分： 
+                命名：site-main
+                标签：div
+2.注释规范            中间的部分用sec-开头
+                                如sec-intro
+    <!-- 通用页头  start -->
+    <!-- 通用页头  end -->
