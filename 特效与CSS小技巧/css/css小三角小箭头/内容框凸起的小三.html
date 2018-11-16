@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 300px;
+            height: 150px;
+            margin: 100px auto;
+            background-color: #eee;
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            right: -20px; /*border的2倍才是贴边*/
+            top: 20px;
+            width: 0;
+            height: 0;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent transparent #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

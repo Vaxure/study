@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小箭头</title>
+    <style>
+        .arrow {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-top: 1px solid #656565;
+            border-right: 1px solid #656565;
+            transform: rotate(135deg);
+            cursor: pointer;
+            transition: transform .2s ease-in;
+            transform-origin: 50% 30%;
+            /* -ms-transform:rotate(45deg); 	
+            -moz-transform:rotate(45deg); 	
+            -webkit-transform:rotate(45deg); 
+            -o-transform:rotate(45deg);  */
+        }
+        .arrow:hover {
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <!--
+        原理： 原理就是用after伪元素画了一个矩形，只描绘了上边框和右边框，这样就形成了一个箭头的形状，
+              然后再用transform属性调整角度实现不同的朝向。
+
+
+    -->
+
+    <i class="arrow"></i>
+</body>
+</html>
