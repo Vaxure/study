@@ -1,2 +1,4 @@
 在线制作ico图标： http://www.faviconico.org/favicon
 快速生成雪碧图：https://www.toptal.com/developers/css/sprite-generator
+css3特效网站： http://www.sucai58.com/list-22.html
+css动画库: https://daneden.github.io/animate.css/
