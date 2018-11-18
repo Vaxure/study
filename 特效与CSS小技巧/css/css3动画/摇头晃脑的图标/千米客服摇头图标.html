@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #999;
+        }
+
+        .customerService {
+            position: fixed;
+            width: 60px;
+            height: 140px;
+            z-index: 999;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+        }
+
+        .customerService .cs-icon {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            background-color: #fff;
+            border-radius: 50%;
+            z-index: 2;
+            animation: ani_qq 8s linear 0s infinite;
+        }
+
+        .customerService .cs-icon>a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: url('./hd-icon.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .customerService .cs-text {
+            position: relative;
+            width: 45px;
+            height: 84px;
+            margin: 0 auto;
+            margin-top: -15px;
+            border-radius: 5px;
+            background-color: #fff;
+            padding-top: 10px;
+        }
+
+        .customerService .cs-text p {
+            font-size: 14px;
+            line-height: 19px;
+            width: 20px;
+            color: #333;
+            margin: 0 auto;
+            text-align: center;
+            cursor: text;
+        }
+
+        .customerService .cs-text p:hover {            
+            color: #F5A623;
+        }
+
+        /*css3动画*/
+        @keyframes ani_qq {
+            0% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+
+            3% {
+                transform: rotate3d(0, 0, 1, -15deg);
+            }
+
+            6% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+
+            9% {
+                transform: rotate3d(0, 0, 1, 30deg);
+            }
+
+            12% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+
+            15% {
+                transform: rotate3d(0, 0, 1, -15deg);
+            }
+
+            18% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+
+            21% {
+                transform: rotate3d(0, 0, 1, 30deg);
+            }
+
+            24% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+
+            100% {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="customerService">
+        <div class="cs-icon">
+            <a href="#"></a>
+        </div>
+        <div class="cs-text">
+            <p>在线咨询</p>
+        </div>
+    </div>
+</body>
+
+</html>
