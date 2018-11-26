@@ -2,3 +2,8 @@
 快速生成雪碧图：https://www.toptal.com/developers/css/sprite-generator
 css3特效网站： http://www.sucai58.com/list-22.html
 css动画库: https://daneden.github.io/animate.css/
+在线压缩js/css: http://tool.oschina.net/jscompress/
+常用的插件动画网站
+jquery插件库
+懒人之家
+站长素材
