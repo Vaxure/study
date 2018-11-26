@@ -3,91 +3,10 @@
  * @Author: Kohaku 
  * @Date: 2018-11-13 21:05:39 
  * @Last Modified by: Kohaku.zxy
- * @Last Modified time: 2018-11-13 23:57:06
+ * @Last Modified time: 2018-11-27 00:06:29
  */
 
 /******************** 游记common *********************/
-.notes_btn {
-    display: block;
-    width: 120px;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    color: #333;
-    font-size: 14px;
-    border: 1px solid #d1d0d0;
-}
-
-.nav_icon {
-    height: 22px;
-    width: 22px;
-    vertical-align: middle;
-}
-
-.btn_icon {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    right: 30px;
-    top: 21px;
-}
-
-.star_icon {
-    width: 18px;
-    height: 17px;
-    vertical-align: middle;
-    margin-right: 15px;
-    background-position: -199px -124px;
-}
-
-.love_icon {
-    width: 18px;
-    height: 16px;
-    vertical-align: middle;
-    margin-right: 15px;
-    background-position: -10px -182px;
-}
-
-.chat_icon {
-    width: 18px;
-    height: 18px;
-    vertical-align: middle;
-    margin-right: 15px;
-    background-position: -199px -10px;
-}
-
-/******************** 游记头部 *********************/
-.notes_header {
-    height: 58px;
-    line-height: 58px;
-    background-color: #666;
-    color: #f3f1f1;
-    font-size: 18px;
-    border-bottom: 1px solid #dcdcdc;
-}
-
-.notes_header a {
-    display: inline-block;
-    height: 58px;
-    width: 100px;
-    text-align: center;
-}
-
-.nav_l i {
-    background-position: -94px -140px;
-}
-
-.nav_r a:nth-child(1) i {
-    background-position: -52px -140px;
-}
-
-.nav_r a:nth-child(2) i {
-    background-position: -10px -140px;
-}
-
-.nav_r a:nth-child(3) i {
-    background-position: -136px -140px;
-}
 
 /******************** 游记主体 *********************/
 .notes_main {
@@ -361,35 +280,3 @@
     top: 17px;
     z-index: 30;
 } */
-.page_nav {
-    padding-top: 67px;
-}
-
-.page_nav .notes_btn {
-    height: 57px;
-    width: 196px;
-    font-size: 18px;
-    line-height: 57px;
-}
-
-.page_nav .page_num {
-    height: 59px;
-    padding: 0 15px 0 6px;
-}
-
-.page_nav .page_num li {
-    float: left;
-    height: 59px;
-    width: 59px;
-    line-height: 59px;
-    text-align: center;
-}
-
-.page_nav .page_num a {
-    font-size: 18px;
-    color: #666;
-}
-
-.page_nav .page_num .current {
-    color: #5696ff;
-}

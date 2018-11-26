@@ -3,7 +3,7 @@
  * @Author: Kohaku 
  * @Date: 2018-11-09 21:23:41 
  * @Last Modified by: Kohaku.zxy
- * @Last Modified time: 2018-11-13 22:34:45
+ * @Last Modified time: 2018-11-26 23:47:45
  */
 
 * {
@@ -48,6 +48,17 @@ body {
 
 .clear {
     clear: both;
+}
+
+.cf:after,
+.cf:before {
+    content: " ";
+    display: table
+}
+
+.cf:after,
+.clearfix:after {
+    clear: both
 }
 
 .fl {
@@ -104,9 +115,4 @@ body {
 
 .mg_bt0 {
     margin-bottom: 0 !important;
-}
-
-.icon {
-    display: inline-block;
-    background: url('../images/main_sprites.png') no-repeat;
 }
