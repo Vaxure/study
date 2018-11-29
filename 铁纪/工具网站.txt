@@ -7,3 +7,5 @@ css动画库: https://daneden.github.io/animate.css/
 jquery插件库
 懒人之家
 站长素材
+
+正则表达式菜鸟测试: https://c.runoob.com/front-end/854

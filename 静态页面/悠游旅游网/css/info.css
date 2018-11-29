@@ -110,9 +110,6 @@
 .info_item .info_title .title {
     font-size: 20px;
     color: #222;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
     line-height: 24px;
     padding: 22px 0 12px 0;
 }
@@ -130,10 +127,6 @@
 }
 
 .info_dec p {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
     padding-top: 9px;
 }
 
@@ -156,16 +149,15 @@
     width: 52px;
 }
 
-.info_main .info_main {
+/* .info_main .info_main {
     height: 253px;
     background: url('../images/');
-}
+} */
 
+/******************** 右侧行业动态、热门标签 *********************/
 .info_main .main_asd {
     float: right;
     width: 272px;
-    height: 288px;
-    background-color: orange;
 }
 
 .main_asd .title {
@@ -174,6 +166,7 @@
     font-size: 24px;
     line-height: 24px;
     color: #2e2e2e;
+    margin-bottom: 26px;
 }
 
 .main_asd .title::after {
@@ -184,4 +177,83 @@
     left: 1px;
     bottom: 0;
     background-color: #5696ff;
+}
+
+.trend_list  {
+
+}
+
+.trend_list li {
+    width: 272px;
+    margin-bottom: 23px;
+}
+
+.trend_list li img {
+    float: left;
+}
+
+.trend_list li .trend_info {
+    float: left;
+    width: 182px;
+    padding-left: 20px;
+}
+
+.trend_list .trend_info p {
+    text-align: left;
+}
+
+.trend_list .trend_info p:first-child {
+    color: #5696ff;
+    font-size: 15px;
+    margin-top: -14px;
+    line-height: 40px;
+}
+
+.trend_list .trend_info p:last-child {
+    color: #222;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.trend_list .trend_info p.first {
+    color: #01b1d7;
+}
+
+.main_asd .hot_tag {
+    padding-top: 10px;
+}
+
+
+.tag_list li {
+    float: left;
+    margin-top: 6px;
+}
+
+.tag_list .tag {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    font-size: 16px;
+    color: #a1a1a1;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.tag_list .active {
+    border-color: #5696ff;
+    background-color: #5696ff;
+    color: #fff;
+}
+
+.tag_list .tag1 {
+    width: 139px;
+}
+
+.tag_list .tag2 {
+    width: 120px;
+}
+
+.tag_list .tag3 {
+    width: 84px;
 }
