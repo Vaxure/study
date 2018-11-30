@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片懒加载</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery {
+            position: relative;
+            width: 200px;
+            margin: 100px auto;
+            text-align: center;
+            background-color: pink;
+        }
+
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            border: none;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <!-- <img src="image/_blank.png" alt="" data-src="images/01.jpg"> -->
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="10" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+        <img src="images/blank.jpg" alt="" data-src="images/timg.jpg">
+    </div>
+
+    <script>
+        // 判定其加载条件是，当图片距离页面顶端的距离小于浏览器滚动距离加
+        //上可视区域高度，即它出现在可视区域时，就加载它
+        window.onload = function () {
+            var imgs = document.querySelectorAll('img');
+            lazyLoad(imgs);
+        }
+
+        window.onscroll = function () {
+            var imgs = document.querySelectorAll('img');
+            lazyLoad(imgs);
+        }
+
+        // 懒加载函数
+        function lazyLoad(imgs) {
+            // 获取浏览器的可视区高度
+            var h = window.innerHeight;
+            // 滚动的距离
+            var s = document.documentElement.scrollTop || document.body.scrollTop;
+            for (var i = 0; i < imgs.length; i++) {
+                if (h + s > getTop(imgs[i])) {
+                    // imgs[i].src = imgs[i].getAttribute('data-src');
+                    // 模拟加载
+                    (function (i) {
+                        setTimeout(function () {
+                            imgs[i].src = imgs[i].getAttribute('data-src');
+                        }, 500);
+                    })(i);
+                }
+            }
+        }
+
+        // 获取offsetTop 循环获取
+        function getTop(e) {
+            var t = e.offsetTop;
+            while (e = e.offsetParent) {
+                t += e.offsetTop;
+            }
+            return t;
+        }
+    </script>
+</body>
+
+</html>
